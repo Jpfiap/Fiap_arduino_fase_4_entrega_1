@@ -2,6 +2,13 @@
 
 Este projeto implementa um sistema de irrigação automatizado para a cultura de milho, utilizando um microcontrolador Arduino. O sistema monitora umidade do solo, pH, e a presença de fósforo e potássio, controlando uma bomba de irrigação com base nas necessidades específicas do milho.
 
+## Equipe
+- [Gabriel] (RM: [rm564934])
+- [Gabriella Serni Ponzetta] (RM: [rm566296])
+- [João Pedro Abreu] (RM: [RM563261])
+- [Fernando Ricardo] (RM: [rm566501])
+- [João Francisco Maciel Albano] (RM: 565985)
+
 ## Objetivo
 Automatizar a irrigação do milho, garantindo:
 - Umidade do solo entre 40% e 70%.
