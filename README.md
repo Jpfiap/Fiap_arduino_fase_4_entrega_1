@@ -1,6 +1,6 @@
 # Sistema de Irrigação Automatizado para Cultura de Milho
 
-Este projeto implementa um sistema de irrigação automatizado para a cultura de milho, utilizando um microcontrolador Arduino. O sistema monitora umidade do solo, pH, e a presença de fósforo e potássio, controlando uma bomba de irrigação com base nas necessidades específicas do milho.
+Este projeto implementa um sistema de irrigação automatizado para a cultura de milho, utilizando um microcontrolador Arduino ESP32. O sistema monitora umidade do solo, pH, e a presença de fósforo e potássio, controlando uma bomba de irrigação com base nas necessidades específicas do milho.
 
 ## Equipe
 - [Gabriel] (RM: [rm564934])
@@ -17,7 +17,7 @@ Automatizar a irrigação do milho, garantindo:
 - Desligamento da irrigação se a umidade atingir 70%, independentemente de outras condições, para evitar encharcamento.
 
 ## Componentes do Circuito
-- **Arduino Uno (ou compatível)**: Microcontrolador principal.
+- **Arduino ESP32*: Microcontrolador principal.
 - **Sensor DHT22**: Mede a umidade do solo (simulada como umidade do ar para testes).
 - **LDR (Resistor Dependente de Luz)**: Simula o sensor de pH, mapeando valores analógicos (0-4095) para a faixa de pH 0 a 14.
 - **Botão (Fósforo)**: Simula a presença (pressionado, LOW) ou ausência (solto, HIGH) de fósforo.
@@ -59,7 +59,7 @@ O sistema segue estas regras:
      - Estado da irrigação ("Ativa" ou "Inativa").
 
 ## Código
-O código (`Irrigacao_Milho.ino`) está estruturado em:
+O código (`prog1.ino`) está estruturado em:
 - **Setup**: Inicializa o Arduino, configura pinos e o sensor DHT22.
 - **Loop**:
    - Lê sensores (umidade, LDR, botão de fósforo).
