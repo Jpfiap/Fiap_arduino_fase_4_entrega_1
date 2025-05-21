@@ -17,7 +17,7 @@ Automatizar a irrigação do milho, garantindo:
 - Desligamento da irrigação se a umidade atingir 70%, independentemente de outras condições, para evitar encharcamento.
 
 ## Componentes do Circuito
-- **Arduino ESP32*: Microcontrolador principal.
+- **Arduino ESP32**: Microcontrolador principal.
 - **Sensor DHT22**: Mede a umidade do solo (simulada como umidade do ar para testes).
 - **LDR (Resistor Dependente de Luz)**: Simula o sensor de pH, mapeando valores analógicos (0-4095) para a faixa de pH 0 a 14.
 - **Botão (Fósforo)**: Simula a presença (pressionado, LOW) ou ausência (solto, HIGH) de fósforo.
