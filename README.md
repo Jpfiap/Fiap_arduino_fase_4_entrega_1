@@ -67,7 +67,50 @@ O código (`prog1.ino`) está estruturado em:
    - Aplica a lógica de controle para ativar/desativar o relé.
    - Exibe leituras no Monitor Serial.
 
-## Como Usar
+## Atualizações da FASE 4
+
+### Display LCD I2C
+- **Novo Componente**: Display LCD 16x2 via I2C
+- **Funcionalidade**: Exibição local das leituras dos sensores
+- **Informações Exibidas**:
+  - Umidade do solo
+  - Nível de pH
+  - Estado dos nutrientes
+  - Status da irrigação
+
+### Conexões do LCD
+| LCD Pin | ESP32 Pin | Descrição |
+|---------|-----------|------------|
+| SDA     | 21        | Dados I2C  |
+| SCL     | 22        | Clock I2C  |
+| VCC     | 5V        | Alimentação|
+| GND     | GND       | Terra      |
+
+### Otimizações de Código
+- Refatoração para melhor eficiência de memória
+- Funções modulares para cada sensor
+- Constantes definidas para configuração
+- Melhor organização do código
+
+### Serial Plotter
+- Visualização gráfica em tempo real
+- Formato otimizado para múltiplos sensores
+- Configuração: 115200 baud
+- Dados plotados:
+  - Umidade do solo
+  - Níveis de pH
+  - Estado dos nutrientes
+
+## Como Usar o Serial Plotter
+1. No Arduino IDE ou PlatformIO:
+   - Abra o Serial Plotter
+   - Configure para 115200 baud
+   - Observe os gráficos em tempo real
+2. Interpretação dos Dados:
+   - Linha azul: Umidade
+   - Linha vermelha: pH
+   - Linhas amarelas: Estado dos nutrientes
+
 1. **Montagem**:
    - Conecte os componentes conforme o esquema de conexões.
    - Use resistores pull-up nos botões, se necessário.
@@ -93,3 +136,4 @@ O código (`prog1.ino`) está estruturado em:
 
 ## Licença
 Este projeto é de código aberto e pode ser modificado ou distribuído livremente.
+
